@@ -72,7 +72,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: var(--bg-gray); */
+  background-color: rgba(24, 127, 192, 0.65);
   z-index: 1;
 }
 
@@ -81,12 +81,17 @@ body {
   z-index: 3;
 }
 
+.hero-content-wrapper p {
+  color: white;
+}
+
 .hero-title {
   color: white;
   font-weight: 800;
   font-size: 4.5rem;
   line-height: 1.1;
   text-align: left;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
 .lead {
@@ -173,11 +178,6 @@ body {
 .program-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(58, 79, 61, 0.1);
-}
-
-.program-card:hover .icon-box {
-  background-color: var(--primary-blue);
-  color: var(--white); /* Ikon berubah jadi putih saat hover */
 }
 
 .icon-box {

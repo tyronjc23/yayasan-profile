@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="265.41199"
+   height="248.47067"
+   viewBox="0 0 265.41199 248.47067"
+   sodipodi:docname="update-biru2.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath36">
+      <path
+         d="M 0,0 H 199.059 V 186.353 H 0 Z"
+         transform="translate(-114.62978,-66.566302)"
+         id="path36" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="8"
+       id="page34"
+       width="265.41199"
+       height="248.47067"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="layer-MC0"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-1141.6479)">
+    <path
+       id="path35"
+       d="m 0,0 h -6.496 c -0.639,0.393 -0.618,0.893 -0.695,1.545 -1.309,11.152 1.008,24.889 0.045,36.321 0.315,0.883 -1.495,2.441 -2.038,2.441 h -18.592 v -8.509 h 6.496 c 0.639,-0.393 0.618,-0.893 0.695,-1.545 0.686,-5.843 0.686,-22.865 0,-28.708 C -20.662,0.893 -20.641,0.393 -21.28,0 h -6.496 V -9.853 H 0 Z m -15.778,67.522 c -12.04,-1.306 -11.087,-20.474 2.104,-19.601 12.646,0.837 11.262,21.05 -2.104,19.601 M -59.847,-19.954 C -94.017,12.892 -82.21,71.407 -37.416,87.34 10.807,104.494 58.93,62.148 47.796,12.009 36.984,-36.679 -23.691,-54.708 -59.847,-19.954"
+       style="fill:#187fc0;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,1294.4877,159.7156)"
+       clip-path="url(#clipPath36)" />
+  </g>
+</svg>

@@ -16,7 +16,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#"><img src="<?= base_url('assets/logo-old.svg') ?>" width="40" height="40" alt="Logo Yayasan">&nbsp;BUMI SEJAHTERA BERSAMA</a>
+			<a class="navbar-brand" href="#"><img src="<?= base_url('assets/logo.svg') ?>" width="40" height="40" alt="Logo Yayasan">&nbsp;BUMI SEJAHTERA BERSAMA</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>

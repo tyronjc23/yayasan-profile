@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="265.41199"
+   height="248.47067"
+   viewBox="0 0 265.41199 248.47067"
+   sodipodi:docname="update-biru2.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8">
+      <path
+         d="M 0,186.353 H 199.059 V 0 H 0 Z"
+         transform="translate(-86.9173,-157.4844)"
+         id="path8" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="5"
+       id="page6"
+       width="265.41199"
+       height="248.47067"
+       margin="38.491467 46.959999 38.492001 46.960133"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="layer-MC0"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-285.41198)">
+    <path
+       id="path7"
+       d="m 0,0 h 25.224 c 2.569,0 4.903,-1.048 6.589,-2.737 1.69,-1.69 2.738,-4.021 2.738,-6.589 v -33.045 h 33.044 c 2.569,0 4.903,-1.048 6.589,-2.737 1.69,-1.689 2.738,-4.02 2.738,-6.589 v -25.222 c 0,-2.569 -1.048,-4.902 -2.738,-6.589 -1.689,-1.689 -4.02,-2.737 -6.589,-2.737 H 34.551 v -33.044 c 0,-2.569 -1.048,-4.903 -2.738,-6.59 -1.689,-1.689 -4.02,-2.737 -6.589,-2.737 H 0 c -2.569,0 -4.903,1.048 -6.589,2.737 -1.69,1.69 -2.737,4.021 -2.737,6.59 v 33.041 h -33.045 c -2.569,0 -4.903,1.048 -6.589,2.737 -1.687,1.69 -2.737,4.021 -2.737,6.589 V -51.7 c 0,2.569 1.048,4.903 2.737,6.589 1.689,1.689 4.02,2.737 6.589,2.737 h 33.045 v 33.048 c 0,2.568 1.047,4.902 2.737,6.589 C -4.903,-1.048 -2.569,0 0,0"
+       style="fill:#3c7dc7;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,401.30173,38.491467)"
+       clip-path="url(#clipPath8)" />
+  </g>
+</svg>
