@@ -10,13 +10,13 @@
 	<div id="heroCarouselBg" class="carousel slide carousel-fade hero-bg" data-bs-ride="carousel">
 		<div class="carousel-inner h-100">
 			<div class="carousel-item active h-100">
-				<img src="https://placehold.co/1920x1080/3a4f3d/white?text=Aksi+Sosial+1" class="d-block w-100 h-100 object-fit-cover" alt="Background 1">
+				<img src="<?= base_url('assets/sample1.jpg') ?>" class="d-block w-100 h-100 object-fit-cover" alt="Background 1">
 			</div>
 			<div class="carousel-item h-100">
-				<img src="https://placehold.co/1920x1080/7c9779/white?text=Aksi+Sosial+2" class="d-block w-100 h-100 object-fit-cover" alt="Background 2">
+				<img src="<?= base_url('assets/sample2.jpg') ?>" class="d-block w-100 h-100 object-fit-cover" alt="Background 2">
 			</div>
 			<div class="carousel-item h-100">
-				<img src="https://placehold.co/1920x1080/b3c1b4/333?text=Aksi+Sosial+3" class="d-block w-100 h-100 object-fit-cover" alt="Background 3">
+				<img src="<?= base_url('assets/sample3.png') ?>" class="d-block w-100 h-100 object-fit-cover" alt="Background 3">
 			</div>
 		</div>
 	</div>
