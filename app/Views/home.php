@@ -1,19 +1,38 @@
 <?= $this->extend('layout/template'); ?>
 
+<?= $this->section('style'); ?>
+
+<?= $this->endSection(); ?>
+
 <?= $this->section('content'); ?>
 
-<section id="home" class="hero-section">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6">
-				<h1 class="hero-title mb-4">Bersama<br>Membangun<br>Harapan</h1>
-				<p class="lead mb-4">
-					Bergabunglah bersama kami untuk menciptakan perubahan nyata dan masa depan yang lebih cerah bagi mereka yang membutuhkan.
-				</p>
-				<a href="#about" class="btn btn-outline-dark rounded-pill px-4 py-2">Kenali Lebih Dalam</a>
+<section id="home" class="hero-section-full">
+	<div id="heroCarouselBg" class="carousel slide carousel-fade hero-bg" data-bs-ride="carousel">
+		<div class="carousel-inner h-100">
+			<div class="carousel-item active h-100">
+				<img src="https://placehold.co/1920x1080/3a4f3d/white?text=Aksi+Sosial+1" class="d-block w-100 h-100 object-fit-cover" alt="Background 1">
 			</div>
-			<div class="col-lg-6 text-center">
-				<img src="https://placehold.co/600x400/7c9779/white?text=Ilustrasi+Yayasan" alt="Hero Image" class="img-fluid rounded-4 shadow">
+			<div class="carousel-item h-100">
+				<img src="https://placehold.co/1920x1080/7c9779/white?text=Aksi+Sosial+2" class="d-block w-100 h-100 object-fit-cover" alt="Background 2">
+			</div>
+			<div class="carousel-item h-100">
+				<img src="https://placehold.co/1920x1080/b3c1b4/333?text=Aksi+Sosial+3" class="d-block w-100 h-100 object-fit-cover" alt="Background 3">
+			</div>
+		</div>
+	</div>
+
+	<div class="hero-overlay"></div>
+
+	<div class="container position-relative h-100 d-flex align-items-center justify-content-start text-start">
+		<div class="hero-content-wrapper col-lg-7" style="z-index: 3;">
+			<h1 class="hero-title mb-4 animate-up">Bersama<br>Membangun<br>Harapan</h1>
+
+			<p class="lead mb-4 animate-up delay-1">
+				Bergabunglah bersama kami untuk menciptakan perubahan nyata dan masa depan yang lebih cerah bagi mereka yang membutuhkan.
+			</p>
+
+			<div class="animate-up delay-2">
+				<a href="#about" class="btn btn-donate btn-lg px-5 py-3 shadow">Kenali Lebih Dalam</a>
 			</div>
 		</div>
 	</div>
@@ -23,13 +42,13 @@
 	<div class="container py-5">
 		<div class="row align-items-center mb-5">
 			<div class="col-lg-6">
-				<img src="https://placehold.co/600x400/b3c1b4/333?text=Tentang+Kami" alt="About" class="img-fluid rounded-4 mb-4 mb-lg-0">
+				<img src="https://placehold.co/600x400/d3effa/333?text=Tentang+Kami" alt="About" class="img-fluid rounded-4 mb-4 mb-lg-0">
 			</div>
 			<div class="col-lg-6">
 				<h6 class="text-uppercase text-muted fw-bold ls-2">Tentang Yayasan</h6>
 				<h2 class="fw-bold mb-3" style="color: var(--primary-dark)">Mewujudkan Kebaikan Bersama</h2>
 				<p class="text-muted">
-					[cite_start]Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat[cite: 20].
+					Yayasan Bumi Sejahtera Bersama bergerak dibidang Pendidikan, Sosial, Kemanusiaan dan Keagamaan. Berbadan Hukum dengan Nomor Daftar Yayasan: No.AHU-0030594.AH.01.12.TAHUN 2024 per tanggal 10 Desember 2024. Yayasan kami berkomitmen untuk memberdayakan masyarakat kurang mampu melalui berbagai program yang berfokus pada peningkatan kualitas hidup dan kesejahteraan sosial.
 				</p>
 			</div>
 		</div>
@@ -38,17 +57,13 @@
 			<div class="col-md-6">
 				<div class="p-4 rounded-4 h-100" style="background-color: var(--bg-white-off);">
 					<h3 class="fw-bold mb-3" style="color: var(--primary-dark)">Visi Kami</h3>
-					[cite_start]<p>Menciptakan masyarakat yang mandiri, sehat, dan berpendidikan melalui gotong royong dan kepedulian sosial[cite: 35].</p>
+					<p>Berkarya untuk mewujudkan yayasan yang membawa berkat dan menolong banyak orang.</p>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="p-4 rounded-4 h-100" style="background-color: var(--bg-cream);">
 					<h3 class="fw-bold mb-3" style="color: var(--primary-dark)">Misi Kami</h3>
-					<ul class="list-unstyled">
-						<li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Memberikan akses pendidikan berkualitas.</li>
-						<li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Meningkatkan layanan kesehatan masyarakat.</li>
-						[cite_start]<li><i class="bi bi-check-circle-fill text-success me-2"></i> Memberdayakan ekonomi keluarga prasejahtera[cite: 38].</li>
-					</ul>
+					<p>Mewujudkan panggilan Spiritualitas Hidup Kristiani yang menyatakan KASIH.</p>
 				</div>
 			</div>
 		</div>
@@ -63,54 +78,39 @@
 		</p>
 
 		<div class="row g-4">
-			<div class="col-md-6 col-lg-3">
+			<div class="col-md-6 col-lg-4">
 				<div class="program-card p-4 h-100 text-center">
 					<div class="icon-box mx-auto">
 						<i class="bi bi-book fs-4"></i>
 					</div>
 					<h5 class="fw-bold">Pendidikan</h5>
-					[cite_start]<p class="small text-muted">Mendukung akses sekolah dan beasiswa bagi anak kurang mampu[cite: 21].</p>
+					<p class="small text-muted">Mendukung akses sekolah dan beasiswa bagi anak kurang mampu.</p>
 				</div>
 			</div>
-			<div class="col-md-6 col-lg-3">
+			<div class="col-md-6 col-lg-4">
 				<div class="program-card p-4 h-100 text-center">
 					<div class="icon-box mx-auto">
 						<i class="bi bi-heart-pulse fs-4"></i>
 					</div>
 					<h5 class="fw-bold">Kesehatan</h5>
-					[cite_start]<p class="small text-muted">Layanan kesehatan gratis dan penyuluhan gizi bagi masyarakat[cite: 25].</p>
+					<p class="small text-muted">Layanan kesehatan gratis dan penyuluhan gizi bagi masyarakat.</p>
 				</div>
 			</div>
-			<div class="col-md-6 col-lg-3">
+			<div class="col-md-6 col-lg-4">
 				<div class="program-card p-4 h-100 text-center">
 					<div class="icon-box mx-auto">
 						<i class="bi bi-tree fs-4"></i>
 					</div>
-					<h5 class="fw-bold">Lingkungan</h5>
-					[cite_start]<p class="small text-muted">Program penghijauan dan pengelolaan sampah berbasis komunitas[cite: 29].</p>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-3">
-				<div class="program-card p-4 h-100 text-center">
-					<div class="icon-box mx-auto">
-						<i class="bi bi-shop fs-4"></i>
-					</div>
-					<h5 class="fw-bold">Ekonomi</h5>
-					[cite_start]<p class="small text-muted">Pelatihan UMKM dan bantuan modal usaha mikro[cite: 41].</p>
+					<h5 class="fw-bold">Sosial</h5>
+					<p class="small text-muted">Program penghijauan dan pengelolaan sampah berbasis komunitas.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="py-5" style="background-color: var(--primary-dark); color: white;">
-	<div class="container py-5 text-center">
-		<i class="bi bi-quote fs-1 opacity-50"></i>
-		<h2 class="my-4 fst-italic fw-light col-lg-8 mx-auto">
-			"Berkat bantuan yayasan, kini kami memiliki harapan baru untuk masa depan yang lebih baik."
-		</h2>
-		<p class="fw-bold mb-0">- Penerima Manfaat</p>
-	</div>
-</section>
+<?= $this->endSection(); ?>
+
+<?= $this->section('scripts'); ?>
 
 <?= $this->endSection(); ?>

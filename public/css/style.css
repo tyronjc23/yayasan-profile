@@ -1,117 +1,207 @@
-/* public/css/style.css */
 :root {
-	/* Warna diambil dari Mockup Halaman Terakhir [cite: 67-73] */
-	--primary-dark: #3a4f3d;
-	/* Hijau Tua (Warna Dominan) */
-	--primary-medium: #7c9779;
-	/* Hijau Medium */
-	--primary-light: #b3c1b4;
-	/* Hijau Muda/Abu */
-	--bg-cream: #fef8e5;
-	/* Background Cream (Hero Section) */
-	--bg-white-off: #f7f9ef;
-	/* Putih Tulang */
-	--bg-gray: #f2f2f2;
+  --primary-dark: #187fc0;
+  --primary-medium: #d3effa;
+  --primary-light: #f3fcff;
+  --bg-gray: #bfbfbf;
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 /* Navbar Customization */
 .navbar {
-	background-color: #fff;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-	padding: 1rem 0;
+  background-color: var(--primary-medium);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0;
 }
 
 .navbar-brand {
-	font-weight: 700;
-	color: var(--primary-dark) !important;
-	font-size: 1.5rem;
-	letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--primary-dark) !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .nav-link {
-	color: var(--primary-dark) !important;
-	font-weight: 500;
-	margin-right: 15px;
+  color: var(--primary-dark) !important;
+  font-weight: 500;
+  margin-right: 15px;
 }
 
 .btn-donate {
-	background-color: var(--primary-dark);
-	color: white;
-	border-radius: 50px;
-	padding: 8px 25px;
-	font-weight: 600;
+  background-color: var(--primary-dark);
+  color: white;
+  border-radius: 50px;
+  padding: 8px 25px;
+  font-weight: 600;
 }
 
 .btn-donate:hover {
-	background-color: var(--primary-medium);
-	color: white;
+  background-color: var(--primary-medium);
+  color: white;
 }
 
 /* Hero Section */
-.hero-section {
-	background-color: var(--bg-cream);
-	/* [cite: 71] */
-	padding: 100px 0;
-	min-height: 80vh;
-	display: flex;
-	align-items: center;
+.hero-section-full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--bg-gray); */
+  z-index: 1;
+}
+
+.hero-content-wrapper {
+  position: relative;
+  z-index: 3;
 }
 
 .hero-title {
-	color: var(--primary-dark);
-	font-weight: 800;
-	font-size: 3.5rem;
-	line-height: 1.2;
+  color: white;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.lead {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Animasi Sederhana (Fade In Up) */
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-section-full {
+    height: auto;
+    padding: 150px 0 100px 0;
+  }
+}
+
+.hero-carousel-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Penyesuaian Responsif untuk Layar HP */
+@media (max-width: 768px) {
+  .hero-carousel-img {
+    height: 300px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* Section Titles */
 .section-title {
-	color: var(--primary-dark);
-	font-weight: 700;
-	margin-bottom: 2rem;
-	text-align: center;
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-/* Cards (Program) */
 .program-card {
-	border: none;
-	background-color: var(--bg-white-off);
-	transition: transform 0.3s;
-	border-radius: 15px;
-	overflow: hidden;
+  border: none;
+  background-color: var(--primary-dark);
+  transition: transform 0.3s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.program-card h5 {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+.program-card p {
+    color: var(--primary-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .program-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 20px rgba(58, 79, 61, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(58, 79, 61, 0.1);
+}
+
+.program-card:hover .icon-box {
+  background-color: var(--primary-blue);
+  color: var(--white); /* Ikon berubah jadi putih saat hover */
 }
 
 .icon-box {
-	width: 60px;
-	height: 60px;
-	background-color: var(--primary-medium);
-	color: white;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 1rem;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-medium);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 /* Footer */
 footer {
-	background-color: var(--primary-dark);
-	/* [cite: 67] */
-	color: white;
-	padding: 50px 0 20px;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 50px 0 20px;
 }
 
 footer a {
-	color: var(--primary-light);
-	text-decoration: none;
+  color: var(--primary-light);
+  text-decoration: none;
 }
