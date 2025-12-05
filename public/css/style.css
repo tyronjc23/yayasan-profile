@@ -43,6 +43,84 @@ body {
   color: white;
 }
 
+.section-common {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-alt {
+  background-color: var(--primary-light);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--primary-dark);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-desc {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.org-table-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.org-table {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.org-table thead th {
+  background-color: var(--primary-dark);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 15px;
+  border: none;
+}
+
+.org-table tbody td {
+  padding: 15px;
+  vertical-align: middle;
+  color: var(--text-dark);
+  border-bottom: 1px solid #eee;
+}
+
+.org-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.org-table tbody tr:hover {
+  background-color: var(--primary-light);
+}
+
+.badge-role {
+  background-color: var(--primary-medium);
+  color: var(--primary-dark);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 /* Hero Section */
 .hero-section-full {
   position: relative;
@@ -79,7 +157,7 @@ body {
 .hero-content-wrapper {
   position: relative;
   z-index: 3;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content-wrapper p {
@@ -139,12 +217,16 @@ body {
 
 /* Penyesuaian Responsif untuk Layar HP */
 @media (max-width: 768px) {
-  .hero-carousel-img {
-    height: 300px;
+  .program-card {
+    flex-direction: column; /* Di HP kembali vertikal */
   }
-
-  .hero-title {
-    font-size: 2.5rem;
+  .program-card-img-wrapper {
+    width: 100%;
+    height: 200px; /* Tinggi tetap di HP */
+  }
+  .program-card-body {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -156,7 +238,7 @@ body {
   text-align: center;
 }
 
-.program-card {
+.about-program-card {
   border: none;
   background-color: var(--primary-dark);
   transition: transform 0.3s;
@@ -164,20 +246,104 @@ body {
   overflow: hidden;
 }
 
-.program-card h5 {
+.about-program-card h5 {
   color: var(--primary-light);
   font-weight: 600;
 }
 
-.program-card p {
-    color: var(--primary-light);
-    font-size: 0.95rem;
-    line-height: 1.5;
+.about-program-card p {
+  color: var(--primary-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(58, 79, 61, 0.1);
+}
+
+.program-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .program-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(58, 79, 61, 0.1);
+  box-shadow: 0 15px 30px rgba(24, 127, 192, 0.2);
+}
+
+.program-card-img-wrapper {
+  position: relative;
+  width: 40%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.program-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.program-card:hover .program-card-img {
+  transform: scale(1.1);
+}
+
+.program-card-body {
+  padding: 25px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.program-icon-small {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  color: var(--primary-blue);
+}
+
+.program-title {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.program-desc {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.program-link {
+  margin-top: auto;
+  color: var(--primary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: gap 0.3s;
+}
+
+.program-link:hover {
+  color: #1469a0;
+  gap: 8px;
 }
 
 .icon-box {
