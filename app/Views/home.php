@@ -41,16 +41,67 @@
 <section id="about" class="py-5">
 	<div class="container py-5">
 		<div class="row align-items-center mb-5">
-			<div class="col-lg-6">
-				<img src="https://placehold.co/600x400/d3effa/333?text=Tentang+Kami" alt="About" class="img-fluid rounded-4 mb-4 mb-lg-0">
-			</div>
-			<div class="col-lg-6">
-				<h6 class="text-uppercase fw-bold ls-2">Tentang Yayasan</h6>
-				<h2 class="fw-bold mb-3" style="color: var(--primary-dark)">Mewujudkan Kebaikan Bersama</h2>
+			<div class="col-lg-12">
+				<h1 class="fw-bold mb-3" style="color: var(--primary-dark)">Tentang Yayasan</h1>
 				<p class="text-muted">
-					Yayasan Bumi Sejahtera Bersama bergerak dibidang Pendidikan, Sosial, Kemanusiaan dan Keagamaan. Berbadan Hukum dengan Nomor Daftar Yayasan: No.AHU-0030594.AH.01.12.TAHUN 2024 per tanggal 10 Desember 2024. Yayasan kami berkomitmen untuk memberdayakan masyarakat kurang mampu melalui berbagai program yang berfokus pada peningkatan kualitas hidup dan kesejahteraan sosial.
+					Yayasan Bumi Sejahtera Bersama bergerak dibidang Pendidikan, Sosial dan Kemanusiaan. Berbadan Hukum dengan Nomor Daftar Yayasan: No.AHU-0030594.AH.01.12.TAHUN 2024 per tanggal 10 Desember 2024. Yayasan kami berkomitmen untuk memberdayakan masyarakat kurang mampu melalui berbagai program yang berfokus pada peningkatan kualitas hidup dan kesejahteraan sosial.
 				</p>
 			</div>
+		</div>
+
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-4">
+				<div class="program-card p-4 h-100 text-center">
+					<div class="icon-box mx-auto">
+						<img src="<?= base_url('assets/pendidikan.svg') ?>" alt="Pendidikan" width="70">
+					</div>
+					<h5 class="fw-bold">Pendidikan</h5>
+					<p class="small">Mendukung akses sekolah dan beasiswa bagi anak kurang mampu.</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="program-card p-4 h-100 text-center">
+					<div class="icon-box mx-auto">
+						<img src="<?= base_url('assets/kesehatan.svg') ?>" alt="Kesehatan" width="70">
+					</div>
+					<h5 class="fw-bold">Kesehatan</h5>
+					<p class="small">Layanan kesehatan gratis dan penyuluhan gizi bagi masyarakat.</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="program-card p-4 h-100 text-center">
+					<div class="icon-box mx-auto">
+						<img src="<?= base_url('assets/sosial.svg') ?>" alt="Sosial" width="70">
+					</div>
+					<h5 class="fw-bold">Sosial</h5>
+					<p class="small">Program penghijauan dan pengelolaan sampah berbasis komunitas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-5 bg-light">
+	<div class="container py-5">
+		<h2 class="section-title">Tentang Kami</h2>
+		<div class="row align-items-center mb-5">
+			<div class="col-lg-12" style="text-align: center;">
+				<img src="https://placehold.co/600x400/d3effa/333?text=image" alt="About" class="img-fluid rounded-4 mb-4 mb-lg-0">
+			</div>
+		</div>
+
+		<div class="row">
+			<h2 class="section-title">Struktur Pengurus</h2>
+			<table>
+				<tr>
+					<td>Nama</td>
+					<td>Jabatan</td>
+				</tr>
+				<tr>
+					<td>Lorem Ipsum</td>
+					<td>Jabatan</td>
+				</tr>
+			</table>
 		</div>
 
 		<div class="row g-4 mt-4">
@@ -70,7 +121,7 @@
 	</div>
 </section>
 
-<section id="programs" class="py-5 bg-light">
+<section id="programs" class="py-5">
 	<div class="container py-5">
 		<h2 class="section-title">Program Kami</h2>
 		<p class="text-center mb-5 col-lg-8 mx-auto text-muted">
